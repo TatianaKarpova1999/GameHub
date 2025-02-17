@@ -1163,6 +1163,10 @@ textarea.w-select {
     left: 0;
 }
 
+.section.faq-section {
+    padding: 0;
+}
+
 .w-widget-twitter-count-shim:not(.w--vertical):before {
     border-width: 4px;
     border-color: #75869600 #5d6c7b #75869600 #75869600;
@@ -2293,6 +2297,21 @@ textarea.w-select {
         row-gap: 20px;
 
     }
+
+    .innovaton-outer {
+        flex-direction: column;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .innovation-content {
+        margin-bottom: 40px;
+    }
+
+    .innovation-image {
+        max-width: 800px;
+        height: 500px;
+    }
 }
 
 @media screen and (max-width: 991px) {
@@ -2300,6 +2319,10 @@ textarea.w-select {
 
     .w-nav[data-collapse="medium"] .w-nav-button {
         display: block;
+    }
+
+    .nav-menu-inner {
+        max-width: 100%;
     }
 }
 
@@ -4478,6 +4501,7 @@ label {
     flex-flow: column;
     text-decoration: none;
     display: flex;
+    height: 100%;
 
     & .cover-image {
         position: absolute;
@@ -4506,6 +4530,7 @@ label {
     box-shadow: 0 0 5px 5px #ff7800;
     border: 1px solid #ff7800;
     min-height: 270px;
+    height: 100%;
 }
 
 .age-icon {
@@ -5756,6 +5781,14 @@ label {
     flex-flow: column;
     display: flex;
 }
+
+@media screen and (max-width: 1030px) {
+
+    .innovation-image {
+        display: none;
+    }
+}
+
 
 .menu-contact {
     grid-row-gap: 10px;
