@@ -2285,6 +2285,15 @@ textarea.w-select {
     position: static;
 }
 
+@media screen and (max-width: 1030px) {
+    .nav-menu-inner {
+        flex-wrap: wrap;
+        max-width: 450px;
+        row-gap: 20px;
+
+    }
+}
+
 @media screen and (max-width: 991px) {
 
 
