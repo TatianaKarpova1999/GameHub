@@ -204,12 +204,6 @@ th {
     padding: 0;
 }
 
-@font-face {
-    font-family: webflow-icons;
-    src: url("data:application/x-font-ttf;charset=utf-8;base64,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") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}
 
 [class^="w-icon-"],
 [class*=" w-icon-"] {
@@ -221,7 +215,7 @@ th {
     font-style: normal;
     font-weight: normal;
     line-height: 1;
-    font-family: webflow-icons !important;
+    font-family: 'Montserrat';
 }
 
 .w-icon-slider-right:before {
@@ -262,7 +256,7 @@ body {
     background-color: #000;
     min-height: 100%;
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', Arial, sans-serif;
     font-size: 14px;
     line-height: 20px;
 }
@@ -1519,7 +1513,7 @@ textarea.w-select {
     -webkit-tap-highlight-color: transparent;
     background: #000000e6;
     outline: 0;
-    font-family: Helvetica Neue, Helvetica, Ubuntu, Segoe UI, Verdana, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 17px;
     font-style: normal;
     font-weight: 300;
@@ -1582,7 +1576,7 @@ textarea.w-select {
     padding: 150px 80px;
     padding-bottom: 50px;
     text-align: center;
-    font-family: "Arial";
+    font-family: 'Montserrat';
     margin: 0 auto;
     max-width: 1200px;
 
@@ -2510,7 +2504,7 @@ textarea.w-select {
 }
 
 body {
-    font-family: var(--body-font);
+    font-family: 'Montserrat';
     color: var(--grey);
     font-size: 16px;
     font-weight: 400;
@@ -2691,7 +2685,7 @@ figure {
 }
 
 .bubbly-button {
-    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-family: 'Montserrat', 'Arial', sans-serif;
     display: inline-block;
     padding: 1em 3em;
     appearance: none;
@@ -2860,6 +2854,10 @@ figure {
     padding-top: var(--tablet-spacing);
     background-color: var(--primary);
     color: var(--white);
+}
+
+.mobile-image {
+    display: none;
 }
 
 .hero-section {
@@ -5785,7 +5783,8 @@ label {
 @media screen and (max-width: 1030px) {
 
     .innovation-image {
-        display: none;
+        max-width: 100%;
+        max-height: 300px;
     }
 }
 
@@ -5878,6 +5877,16 @@ label {
         font-size: 18px;
     }
 
+    .desktop-image {
+        display: none;
+    }
+
+
+
+    .mobile-image {
+        display: block;
+    }
+
     body.not-scroll {
         overflow: hidden;
     }
@@ -5918,7 +5927,7 @@ label {
         border-radius: 0;
         margin-left: 0;
         margin-right: 0;
-        padding: 20px 30px;
+        padding: 10px 30px;
     }
 
     .nav-link:hover:where(.w-variant-81c30c15-970a-d0ef-5d9c-07372335add7) {
