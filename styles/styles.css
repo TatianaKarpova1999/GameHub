@@ -44,6 +44,7 @@ template {
 
 a {
     background-color: #0000;
+
 }
 
 a:active,
@@ -1561,6 +1562,16 @@ textarea.w-select {
     background-position: 0 0, 50%;
     background-repeat: repeat, no-repeat;
     background-size: auto, cover;
+
+    & .section-title {
+        animation: left 0.3s;
+        transition: 0.3s;
+    }
+
+    & .adv-text {
+        animation: left 0.5s;
+        transition: 0.5s;
+    }
 }
 
 .dop-style {
@@ -1661,6 +1672,11 @@ textarea.w-select {
     background-position: 0 0, 50%;
     background-repeat: repeat, no-repeat;
     background-size: auto, cover;
+
+    & .button-app-container {
+        justify-content: end;
+        margin-top: 100px;
+    }
 }
 
 .w-lightbox-caption {
@@ -2914,6 +2930,15 @@ figure {
 
 .fill-block {
     flex: 1;
+
+    &.active {
+        animation: right 0.3s;
+        transition: 0.3s;
+    }
+}
+
+.w-dyn-list.active {
+    animation: right 0.3s;
 }
 
 .hero-wrap {
@@ -3086,6 +3111,11 @@ figure {
     justify-content: flex-start;
     align-items: flex-start;
     display: flex;
+
+    &.active {
+        animation: top 0.3s;
+        transition: 0.3s;
+    }
 
     h1,
     h2 {
@@ -3705,6 +3735,13 @@ figure {
     padding-top: 50px;
 }
 
+.blog {
+    & .button-app-container {
+        justify-content: end;
+        margin-top: 100px;
+    }
+}
+
 .blog-card {
     grid-row-gap: 15px;
     color: var(--grey);
@@ -3840,6 +3877,12 @@ figure {
     align-items: center;
     display: flex;
     color: #fff;
+
+    &.active {
+        animation: top 0.3s;
+        transition: 0.3s;
+    }
+
 
     h2,
     h1 {
@@ -3981,6 +4024,11 @@ figure {
 .safe {
     padding-top: 0;
     padding-bottom: 70px;
+
+    &.active {
+        animation: left 0.3s;
+        transition: 0.3s;
+    }
 }
 
 .faq-image {
@@ -4002,6 +4050,11 @@ figure {
     max-width: 1200px;
     margin: 0 auto;
     color: #fff;
+
+    p.active {
+        animation: right 0.3s;
+        transition: 0.3s;
+    }
 }
 
 .faq-wrap {
@@ -4278,6 +4331,10 @@ label {
     cursor: pointer;
     align-items: center;
 
+    &:hover {
+        color: #fff;
+    }
+
     @media (max-width: 767px) {
         font-size: 14px;
     }
@@ -4293,24 +4350,6 @@ label {
 .form__checkbox {
     width: 20px;
     height: 20px;
-
-    &:hover:not(.focus-visible)+.form__agreement {
-        border-color: rgb(56, 83, 93, 0.6);
-        transition: 0.2s;
-        color: rgb(56, 83, 93, 0.6);
-    }
-
-    &:active:not(.focus-visible)+.form__agreement {
-        opacity: 0.8;
-        transition: 0.1s;
-    }
-
-    &:focus-visible+.form__agreement {
-        border-color: rgb(56, 83, 93, 0.4);
-        color: rgb(56, 83, 93, 0.6);
-        transition: 0.2s;
-        outline: none;
-    }
 }
 
 .form__button {
@@ -4320,7 +4359,6 @@ label {
     text-decoration: none;
     animation: none;
     border: none;
-    ;
     max-width: 300px;
     padding: 0px 50px;
     box-sizing: border-box;
@@ -4336,19 +4374,22 @@ label {
     font-family: 'Montserrat';
 
     &:hover:not(.focus-visible) {
-        background-color: rgb(129, 100, 37);
+        background-color: rgb(35, 22, 118);
         transition: 0.2s;
+        color: rgb(255, 255, 255);
     }
 
     &:active:not(.focus-visible) {
-        background-color: rgb(89, 69, 25);
+        background-color: rgb(35, 22, 118);
         transition: 0.1s;
+        color: rgb(255, 255, 255);
     }
 
     &:focus-visible {
-        background-color: rgb(129, 100, 37);
+        background-color: rgb(35, 22, 118);
         transition: 0.2s;
         outline: none;
+        color: rgb(255, 255, 255);
     }
 }
 
@@ -4393,6 +4434,11 @@ label {
         color: #fff;
         max-width: 700px;
     }
+
+    p.active {
+        animation: top 0.3s;
+        transition: 0.3s;
+    }
 }
 
 .tournaments {
@@ -4401,6 +4447,10 @@ label {
     background-repeat: repeat, no-repeat;
     background-size: auto, cover;
 
+    & .button-app-container {
+        justify-content: center;
+        margin-top: 150px;
+    }
 }
 
 .teams-list {
@@ -4659,7 +4709,7 @@ label {
     grid-column-gap: 40px;
     color: var(--grey);
     border-radius: 8px;
-    height: 100%;
+    height: auto;
     padding: 40px;
     text-decoration: none;
     transition: background-color .3s;
@@ -4667,6 +4717,7 @@ label {
     box-shadow: 0 0 15px 5px #ff7800;
     border: 1px solid #ff7800;
     backdrop-filter: blur(20px);
+    height: 100%;
 
 }
 
@@ -4688,6 +4739,11 @@ label {
     flex-flow: column;
     display: flex;
 
+    &.active {
+        animation: right 0.3s;
+        transition: 0.3s;
+    }
+
     h5,
     p {
         color: #fff;
@@ -4704,7 +4760,7 @@ label {
 }
 
 .w-dyn-item {
-    min-height: 280px;
+    min-height: auto;
 }
 
 .case-study-card {
@@ -4725,6 +4781,11 @@ label {
     box-shadow: 0 0 15px 5px #ff7800;
     border: 1px solid #ff7800;
     min-height: 250px;
+
+    &.active {
+        animation: left 0.3s;
+        transition: 0.3;
+    }
 }
 
 
@@ -5134,6 +5195,11 @@ label {
         line-height: 150%;
 
     }
+
+    &.active {
+        animation: bottom 0.3s;
+        transition: 0.3s;
+    }
 }
 
 .tabs-wrap.top {
@@ -5230,6 +5296,11 @@ label {
     width: 100%;
     max-width: 409px;
     overflow: hidden;
+
+    &.active {
+        animation: bottom 0.3s;
+        transition: 0.3s;
+    }
 }
 
 .innovation-top {
@@ -5244,6 +5315,11 @@ label {
     p {
         color: #fff;
     }
+
+    p.active {
+        animation: left 0.3s;
+        transition: 0.3s;
+    }
 }
 
 .innovation-bottom {
@@ -5253,6 +5329,11 @@ label {
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-columns: 1fr;
     display: grid;
+
+    &.active {
+        animation: left 0.3s;
+        transition: 0.3s;
+    }
 }
 
 .innovation-block {
@@ -5345,12 +5426,57 @@ label {
     p {
         color: #fff;
         font-size: 20px;
+
+        &.active {
+            animation: left 0.4s;
+            transition: 0.4s;
+        }
+    }
+
+    & .button-app-container {
+        margin-top: 150px;
     }
 }
+
+.button-app-container {
+    display: flex;
+    gap: 10px;
+    row-gap: 20px;
+    column-gap: 30px;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+
+    & .button {
+        padding: 0;
+        background: none;
+        max-width: 200px;
+    }
+
+    & .apple-button {
+        margin-top: 7px;
+    }
+}
+
 
 .hero-btns {
     grid-column-gap: 10px;
     display: flex;
+
+    &.active {
+        animation: left 0.6s;
+        transition: 0.6s;
+    }
+}
+
+.button-about {
+    animation: none;
+}
+
+.tour-btn {
+    justify-content: center;
+    margin-top: 50px;
 }
 
 .hero-heading {
@@ -5358,6 +5484,11 @@ label {
     text-transform: uppercase;
     font-size: 64px;
     font-weight: 600;
+
+    &.active {
+        animation: left 0.3s;
+        transition: 0.3s;
+    }
 }
 
 .index-about {
@@ -5396,6 +5527,11 @@ label {
     max-width: 405px;
     position: relative;
     overflow: hidden;
+
+    &.active {
+        animation: right 0.3s;
+        transition: 0.3s;
+    }
 }
 
 .about-data {
@@ -5450,6 +5586,11 @@ label {
     width: 100%;
     max-width: 600px;
     color: #fff;
+
+    &.active {
+        animation: top 0.4s;
+        transition: 0.4s;
+    }
 }
 
 .about-info {
@@ -6412,6 +6553,7 @@ label {
     .innovation-image {
         aspect-ratio: 409 / 400;
         max-width: none;
+
     }
 
     .innovation-top {
