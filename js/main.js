@@ -1,1 +1,5 @@
 import './faq.js'
+import './button.js'
+import './scroll.js'
+import './swiper-reviews.js'
+import './burger.js'
