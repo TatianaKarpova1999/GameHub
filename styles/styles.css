@@ -6272,6 +6272,16 @@ label {
         flex: none;
     }
 
+    .button-app-container {
+
+        & .button {
+            padding: 0;
+            background: none;
+            max-width: 100px;
+        }
+    }
+
+
 
     .age-icon {
         width: 70px;
