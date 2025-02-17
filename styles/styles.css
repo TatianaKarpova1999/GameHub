@@ -1620,7 +1620,8 @@ textarea.w-select {
         padding: 150px 30px;
 
         h1 {
-            font-size: 30px;
+            font-size: 25px;
+            margin-bottom: 30px;
         }
 
         h2 {
@@ -4789,7 +4790,6 @@ label {
     display: flex;
     box-shadow: 0 0 15px 5px #ff7800;
     border: 1px solid #ff7800;
-    min-height: 250px;
 
     &.active {
         animation: left 0.3s;
@@ -6088,7 +6088,7 @@ label {
 
     .case-study-list {
         grid-column-gap: 20px;
-        grid-row-gap: 20px;
+        grid-row-gap: 30px;
         grid-template-columns: 1fr 1fr;
     }
 
@@ -6272,12 +6272,44 @@ label {
         flex: none;
     }
 
+    .work {
+        & .button-app-container {
+            justify-content: center;
+            margin-top: 100px;
+        }
+    }
+
+    .video {
+        padding: 0;
+    }
+
+    .services-wrapper {
+        padding: 0 10px;
+    }
+
+    .leaderboard-item {
+        font-size: 14px;
+    }
+
+    .blog {
+        & .button-app-container {
+            justify-content: center;
+            margin-top: 100px;
+        }
+    }
+
     .button-app-container {
 
         & .button {
             padding: 0;
             background: none;
-            max-width: 100px;
+            max-width: 150px;
+        }
+    }
+
+    .tabs-wrap {
+        p {
+            font-size: 18px;
         }
     }
 
@@ -6426,14 +6458,24 @@ label {
         right: 5%;
     }
 
-    .faq-section {
+    .section.faq-section {
         flex-flow: column;
+        padding-bottom: 0;
     }
 
     .faq-content {
         grid-row-gap: var(--small-spacing);
         padding-left: 20px;
         padding-right: 20px;
+        padding-bottom: 0;
+    }
+
+    .section.safe {
+        padding-top: 0;
+    }
+
+    .form {
+        width: 100%;
     }
 
     .faq-wrap {
