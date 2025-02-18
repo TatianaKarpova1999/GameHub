@@ -27,7 +27,7 @@
           <div class="container w-container">
             <div class="navbar-wrap">
               <a
-                href="/"
+                href="index.html"
                 aria-current="page"
                 class="brand w-nav-brand w--current"
                 ><img class="logo" src="images/logo.png" alt="Logotype"
@@ -522,6 +522,24 @@
           </form>
         </div>
       </section>
+      <section>
+        <div class="help-image">
+          <img src="images/help-icon.png" alt="alt" />
+        </div>
+        <div class="chat-container">
+          <div class="chat-content" id="chatWindow">
+            <img class="chat-close" src="images/chat-img.png" alt="image" />
+          </div>
+          <div class="chat-input-container">
+            <input
+              type="text"
+              id="chatInput"
+              placeholder="Enter a message..."
+            />
+            <button class="chat-button" id="sendButton">Sumbit</button>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="w-layout-blockcontainer container w-container">
@@ -566,7 +584,8 @@
                   <div class="footer-head">Contact us</div>
                   <a href="tel:+918376248021" class="bottom-link"
                     >+918376248021</a
-                  ><a href="mailto:contact@gamehub.com" class="bottom-link"
+                  >
+                  <a href="mailto:contact@gamehub.com" class="bottom-link"
                     >contact@gamehub.com</a
                   >
                 </div>
@@ -574,7 +593,10 @@
             </div>
           </div>
           <div class="footer-bottom">
-            <a href="/" aria-current="page" class="brand w-nav-brand w--current"
+            <a
+              href="index.html"
+              aria-current="page"
+              class="brand w-nav-brand w--current"
               ><img class="logo" src="images/logo.png" alt="Logotype"
             /></a>
             <img
@@ -593,5 +615,6 @@
       </div>
     </footer>
     <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/chat.js"></script>
   </body>
 </html>
